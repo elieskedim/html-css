@@ -1,0 +1,11 @@
+@-webkit-keyframes masuperanimation {
+  100% {
+    transform: rotate(360deg); } }
+@keyframes masuperanimation {
+  100% {
+    transform: rotate(360deg); } }
+li:hover {
+  -webkit-animation: masuperanimation 5s;
+  animation: masuperanimation 5s; }
+
+/*# sourceMappingURL=animation.css.map */
