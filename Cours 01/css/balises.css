@@ -1,9 +1,9 @@
 body {
   font-family: 'Montserrat', sans-serif;
-  background-image: url("../img/ao.gif"); }
+  background-image: url("../img/ao.gif");
+  color: #e2dddd; }
 
 header {
-  color: #e2dddd;
   background-color: #151518d3;
   width: 1200px;
   margin: auto;
@@ -35,5 +35,19 @@ header nav ul li {
 header nav ul li a {
   text-decoration: none;
   color: #e2dddd; }
+
+section {
+  background-color: #151518d3;
+  width: 1200px;
+  margin: auto;
+  border-radius: 15px;
+  padding: 15px;
+  margin-top: 50px; }
+
+section h2 {
+  font-size: 1.6em; }
+
+p {
+  line-height: 30px; }
 
 /*# sourceMappingURL=balises.css.map */
