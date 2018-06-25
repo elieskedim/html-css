@@ -1,0 +1,31 @@
+$couleur_fond : #4b4c53;
+body{
+    background-image: url('../img/ao.gif')
+}
+h1{
+    color: azure;
+}
+form{
+    width: 960px;
+    margin: auto;
+    
+}
+#form{
+    background-color: $couleur_fond;
+    color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+}
+label{
+    float: left;
+    width: 190px;
+}
+#send{
+    display: inline-block;
+    padding: 10px;
+    background-color: $couleur_fond;
+    border-radius: 15px;
+    margin: auto;
+    margin-left: 400px;
+    margin-top: 10px;
+}

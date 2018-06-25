@@ -1,0 +1,16 @@
+section p:nth-child(1) {
+  color: aqua; }
+
+section p:nth-child(2) {
+  color: blue; }
+
+section p:nth-child(3) {
+  color: red; }
+
+section p:nth-child(4) {
+  color: greenyellow; }
+
+section p:nth-child(5) {
+  color: aqua; }
+
+/*# sourceMappingURL=selecteur1.css.map */

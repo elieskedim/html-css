@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="css/formulaire.css">
+</head>
+<body>
+    <h1>Formulaire</h1>
+        <form method="post" action="">
+            <div id="form">
+                <fieldset>
+                    <legend>Identité</legend>
+                    <label for="">Pseudo *</label>
+                    <input type="text" placeholder="Mon Pseudo" required>
+                    <br>
+                    <!-- REQUIRED rens le champs obligatoire pour valider le formulaire -->
+
+                    <!-- mot de passe-->
+                    <label for="">Password *</label>
+                    <input type="password" required>
+                    <br>
+                    <!-- email -->
+                    <label for="">Email</label>
+                    <input type="email" placeholder="moi.coucou@mail.fr">
+                    <br>
+                    <!-- fichier -->
+                    <label for=""Photo></label>
+                    <input type="file">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Questions</legend>
+
+                    <!-- Cases a cocher -->
+                    <label for="">Où part-on en vacances ?</label>
+                    <p>
+                        <input type="checkbox" checked> Chine
+                        <!-- Checked coche une  case par défaut-->
+                        <input type="checkbox"> Australie
+                        <input type="checkbox"> Mars
+                    </p>
+
+                    <!-- Zone de texte-->
+                    <label for="">Commentaires</label>
+                    <!-- je dimensionne ma zone de texte avec les attributs Cols (colonnes = nb de caractères et ROWS (rang/lignes -->
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </fieldset>
+            </div>
+            <div id="send">
+                <!-- button d'envoi du formulaire -->
+                <input type="submit" name="" id="" value="send">
+            </div>
+            
+                <!-- bouton pour vider le formulaire -->
+                <!--<input type="reset" value="annuler">-->
+            
+        </form>
+</body>
+</html>

@@ -1,0 +1,45 @@
+*{
+    font-family: fantasy;
+}
+body{
+    width: 50%;
+    margin:  auto;
+    background-image: url('../img/design-tools.jpg')
+}
+#content{
+    background-color:#aca3fc;
+    padding: 20px;
+    box-shadow: 6px 6px 6px black;
+}
+table{
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+thead, tfoot{
+    background-color: #e6e6fa;
+    border: 2px solid #4530cc;
+}
+tbody{
+    border: 1px solid #6a5acd
+}
+th{
+    border: 1px dotted #6a5acd;
+    padding: 4px;
+    background-color: #e6E6fa;
+    width: 25%;
+}
+td{
+    font-size: 100%;
+    border: 1px dotted #6a5acd;
+    padding: 5px;
+}
+td:first-child{
+    text-align: left;
+    background-color: #e6e6fa;
+}
+caption{
+    font-size: 2.1em;
+    font-family: 'Shrikhand', cursive;
+}

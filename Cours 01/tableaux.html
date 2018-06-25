@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>tableaux</title>
+    <link rel="stylesheet" href=css/tableaux.css>
+    <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+</head>
+<body>
+<div id="content">
+    <!-- d&éclaration du tableau-->
+    <table>
+        <!-- Titre (cellule fusionnées -->
+        <caption>Ventes</caption>
+        <thead>
+            <!-- tr = rang / ligne (t = table / r = row ou ligne) -->
+            <tr>
+                <!-- th = titres de colonnes (t = table / h = tête -->
+                <th>Jour</th>
+                <th>Smartphone</th>
+                <th>Tablette</th>
+                <th>Portable</th>
+            </tr>
+        </thead>
+
+        <!-- tfoot = bas du tableau ! les normes W3C mettent la balise TFOOT avant celle du corps du tableau -->
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>899</td>
+                <td>450</td>
+                <td>1300</td>
+            </tr>
+        </tfoot>
+
+        <!-- tbody = corps du tableau -->
+        <tbody>
+            <tr>
+                <td>Lundi</td>
+                <td>8</td>
+                <td>4</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>Mardi</td>
+                <td>9</td>
+                <td>0</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Mercredi</td>
+                <td>6</td>
+                <td>3</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Jeudi</td>
+                <td>0</td>
+                <td>0</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>Vendredi</td>
+                <td>7</td>
+                <td>7</td>
+                <td>3</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
