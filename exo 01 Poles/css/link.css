@@ -1,0 +1,35 @@
+table{
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+td{
+    height: 20px;
+    width: 20px;
+}
+.vf{
+    background-color: #002a01;
+}
+.black{
+    background-color: #000;
+}
+.vc{
+    background-color: #007403;
+}
+.jf{
+    background-color: #fdd503;
+}
+.jc{
+    background-color: #f8eaad;
+}
+.mc{
+    background-color: #6a4b14;
+}
+.gf{
+    background-color: #393738;
+}
+.blue{
+    background-color: #738cff;
+}
+.gc{
+    background-color: #5f5e5c;
+}

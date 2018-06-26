@@ -1,0 +1,20 @@
+table{
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+td{
+    height: 20px;
+    width: 20px;
+}
+.jaune{
+    background-color: #fce02c;
+}
+.gris{
+    background-color: gray;
+}
+.noir{
+    background-color: black;
+}
+.bleu{
+    background-color: blue;
+}

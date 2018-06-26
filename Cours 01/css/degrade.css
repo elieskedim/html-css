@@ -1,0 +1,43 @@
+#content{
+    height: 50em;
+    width: 50em;
+    border-radius: 50%;
+    background-image: radial-gradient(circle at center, rgb(98, 220, 236), rgb(21, 85, 122));
+    float: left;
+}
+#spher{
+    height: 20em;
+    width: 20em;
+    border-radius: 100%;
+    background-image: radial-gradient(circle at center, rgb(152, 231, 142), rgb(1, 114, 10));
+    float: left;
+    margin-top: 35em;
+    margin-left: -15em;
+}
+#spher3{
+    height: 15em;
+    width: 15em;
+    border-radius: 100%;
+    background-image: radial-gradient(circle at center, rgb(240, 156, 156), rgb(184, 0, 0));
+    float: left;
+    margin-top: 30em;
+    margin-left: -5em;;
+}
+#spher4{
+    height: 10em;
+    width: 10em;
+    border-radius: 100%;
+    background-image: radial-gradient(circle at center, rgb(236, 161, 99), rgb(255, 125, 4));
+    float: left;
+    margin-top: 25em;
+    margin-left: -5em;;
+}
+#spher5{
+    height: 5em;
+    width: 5em;
+    border-radius: 100%;
+    background-image: radial-gradient(circle at center, rgb(227, 236, 99), rgb(241, 238, 21));
+    float: left;
+    margin-top: 21em;
+    margin-left: -5em;;
+}
