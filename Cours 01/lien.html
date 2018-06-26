@@ -8,8 +8,52 @@
     <link rel="stylesheet" href="css/lien.css">
 </head>
 <body>
-    <h1>Page 1</h1>
+    <h1>Les liens d'une page html ou la navigation</h1>
 
-    <a href="lien_bis.html">Page2</a>
+    <h2 id="top">Les ancres : lens dans la même page</h2>
+    
+        <p><a href="#interieur">Une autre page du même site</a></p>
+        <p><a href="#onglet">Un nouvel onglet</a></p>
+        <p><a href="#site">Un autre site</a></p>
+        <p><a href="#telecharger">Telecharger un fichier</a></p>
+        <p><a href="#visualiser">Ouvrir un pdf dans mon navigateur</a></p>
+        <p><a href="#download">Telecharger un PDF</a></p>
+        <p><a href="#image">Mettre un lien sur une image</a></p>
+        <p><a href=""></a></p>
+
+    <h2 id="interieur">Une autre page du même site</h2>
+    <a href="lien_bis.html">Cliquer ici pour aller en page 2</a>
+    <a href="#top">Remonter</a>
+    <hr>
+
+    <h2 id="onglet">Un nouvel onglet</h2>
+    <a href="lien_bis.html" target="_blank">Cliquer ici pour aller en page 2</a>
+    <a href="#top">Remonter</a>
+    <hr>
+
+    <h2 id="site">Un autre site</h2>
+    <a href="https://github.com" title="github" target="_blank">Cliquer ici pour aller sur github</a>
+    <a href="#top">Remonter</a>
+    <hr>
+
+    <h2 id="telecharger">Telecharger un fichier</h2>
+    <a href="img/document.doc">Document</a>
+    <a href="#top">Remonter</a>
+    <hr>
+
+    <h2 id="visualiser">Ouvrir un PDF dans mon navigateur</h2>
+    <a href="img/image.pdf">PDF</a>
+    <a href="#top">Remonter</a>
+    <hr>
+
+    <h2 id="download">Telecharger un PDF</h2>
+    <a href="img/image.pdf" download>PDF</a>
+    <a href="#top">Remonter</a>
+    <hr>
+
+    <h2 id="image">Mettre un lien sur une image</h2>
+    <a href="https://marketplace.visualstudio.com/items?itemName=bradgashler.htmltagwrap"><img src="img/image.jpg" alt="Image d'un lion"></a>
+    <a href="#top">Remonter</a>
+    <hr>
 </body>
 </html>
