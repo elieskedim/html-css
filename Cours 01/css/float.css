@@ -1,0 +1,31 @@
+body{
+    margin: 0 auto;
+    background-color: antiquewhite;
+}
+div{
+    width: 90%;
+    background-color: lightsteelblue;
+    margin: 0 auto;
+}
+p{
+    background-color: aquamarine;
+}
+p span{/* Cible les span enfants d'une balise <p> */
+    background-color: #000;
+    color: royalblue;
+}
+
+.photo{
+    height: 11vh;
+    width: 18vh;
+    padding: 5vh;
+    background: url(../img/image.jpg);
+    background-repeat: no-repeat;
+    border: 5px double orchid;
+    margin: 2vh;
+    float: left;
+}
+
+.clear{
+    clear: both;
+}
