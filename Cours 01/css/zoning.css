@@ -1,0 +1,110 @@
+.content{
+    background-color: azure;
+    width: 70%;
+    border: 1px solid black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    float: left;
+    margin-left: 19em;
+}
+header{
+    height: 10em;
+    border: 1px solid black;
+    background-color: yellowgreen;
+    text-align: center;
+}
+nav{
+    height: 5em;;
+    border: 1px solid black;
+    background-color: rgb(221, 166, 15);
+    text-align: center;
+}
+main{
+    height: 15em;
+    width: 70%;
+    border:1px solid black;
+    background-color: rgb(187, 88, 88);
+    float: left;
+    text-align: center;
+}
+aside{
+    height: 15em;
+    width: 29.67%;
+    border:1px solid black;
+    background-color: rgb(187, 185, 88);
+    float: left;
+    text-align: center;
+}
+section{
+    height: 16em;
+    border:1px solid black;
+    background-color: rgb(159, 88, 187);
+    width: 49.84%;
+    float: left;
+    text-align: center;
+
+}
+footer{
+    height: 8em;
+    border:1px solid black;
+    background-color: rgb(88, 187, 157);
+    text-align: center;
+}
+
+#pub{
+    height: 25em;
+    width: 25em;
+    border-radius: 50%;
+    float: left;
+    margin-left: -15em;
+    margin-top: 25em;
+    background-color: rgb(228, 62, 200);
+    text-align: center;
+}
+#pub2{
+    height: 25em;
+    width: 25em;
+    border-radius: 50%;
+    float: left;
+    margin-left: -105em;
+    margin-top: 25em;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+#pub3{
+    height: 20em;
+    width: 20em;
+    border-radius: 50%;
+    float: left;
+    margin-left: -105em;
+    margin-top: 7em;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+#pub4{
+    height: 25em;
+    width: 25em;
+    border-radius: 50%;
+    float: left;
+    margin-left: -105em;
+    margin-top: 45em;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+#pub5{
+    height: 5em;
+    width: 5em;
+    border-radius: 50%;
+    float: left;
+    margin-left: -54em;
+    margin-top: 39em;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+#pub p{
+    margin-top: 3em;
+    font-size: 3em;
+}
+
+.clear{
+    clear: both;
+}
