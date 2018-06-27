@@ -1,9 +1,8 @@
 .cubitus{
-    height: 10em;
-    width: 10em;
-    float: left;
-    text-align: center;
-    margin: 0.2em;
+    height: 50px;
+    width: 50px;
+   /* float: left;*/
+    display: inline-block;
 }
 .c1 , .c2, .c3, .c4, .c5{
     border: 1px solid black;
@@ -28,11 +27,14 @@
     background-color: rgb(99, 29, 12);
     border-radius: 0 30% 0 30%;
 }
-
-
-
-
-
-.clear{
-    clear: both;
+.c6{
+    margin-top: -30px;
 }
+
+
+
+
+
+/*.clear{
+    clear: both;
+}*/
