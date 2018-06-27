@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demo Js</title>
+    <script>
+        var marc = {
+            nom: 'marc',
+            age: 16,
+            moyenne: 15
+        }
+        if(marc.age >= 18 && marc.age <= 25){
+            console.log('Super tu peux profiter de la réduction');
+        }else if(marc.age >= 15 && marc.age < 18) {
+            console.log('Tu ne peux pas passer la conduite mais tu peux passer la conduite accompagné');
+        }else if(marc.age > 25) {
+            console.log('Tu peux passer le permis mais tu na aucune réduction possible');
+        }else {
+            console.log('Désolé tu est trop jeune pour passer la conduite tu as ' + marc.age);
+            var conduite = 18 - marc.age ;
+            var accompagné = 15 - marc.age;
+            console.log('Tou pourras passer la conduite dans ' + conduite + ' ans');
+            console.log('Tu pourra passer la conduite accompagné dans ' + accompagné + ' ans');
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
