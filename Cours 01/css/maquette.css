@@ -34,7 +34,26 @@ ul#menu{
     margin: 0;
     padding: 0;
     background: url(../img/bg_menu.gif) repeat-x 0 -25px;/* repeat-x => répète l'image horizontalement (axe x) - 0 => aucun décalage à gauche - et -25px remonte l'image*/ 
+    list-style: none;
 }
+ul#menu li{
+    float: left; /* aligne les li sur la même migne */
+    text-align: center;
+    }
+    ul#menu li a{
+        width: 130px;
+        line-height: 25px;
+        font-size: 1.2em;
+        font-weight: bold;
+        letter-spacing: 2px;
+        color: #fff;
+        display: block;
+        text-decoration: none;
+        border-right: 2px solid #dea;
+    }
+    ul#menu li a:hover{
+        background: url(../img/bg_menu.gif) repeat-x 0 0;
+    }
 div#contenu{
     padding: 0 30px 0 100px;
     background: url('../img/bg_page.gif') no-repeat;
