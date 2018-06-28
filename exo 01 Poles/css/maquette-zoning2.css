@@ -1,0 +1,45 @@
+body{
+    color: #fff;
+    text-align: center;
+}
+header{
+    height: 90px;
+    background-color: rgb(241, 95, 95);
+}
+#gauche{
+    height: 600px;
+    border: 1px solid #000;
+    width: 20%;
+    float: left;
+}
+section{
+    border: 1px solid #000;
+    width: 59%;
+    float: left;
+}
+.z{
+    height: 508px;
+    width: 19.9%;
+    float: left;
+    background-color: rgb(71, 153, 51);
+    border-right: 1px solid white
+}
+footer{
+    border: 1px solid #000;
+    width: 59%;
+    float: left;
+    background-color: rgb(212, 241, 47);
+    height: 90px;
+}
+.blue{
+    background-color: rgb(95, 145, 209);
+}
+#droite{
+    float: right;
+    border: 1px solid #000;
+    width: 20.68%;
+    height: 600px;
+}
+p{
+    margin-top: 50px;
+}
