@@ -1,0 +1,19 @@
+*{
+    font-family: sans-serif;
+}
+nav{
+    background: #000;
+    color: #fff;
+    padding: 0 0.5em;
+    text-align: center;
+    width: 100%;
+    margin: 0;position: fixed;
+    top: 0;
+    left: 0;
+}
+nav a{
+    float: left;
+    text-decoration: none;
+    color: #ffffff;
+    
+}
