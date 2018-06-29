@@ -15,5 +15,14 @@ nav a{
     float: left;
     text-decoration: none;
     color: #ffffff;
-    
+    background: #000;
+    height: 2.8em;
+    line-height: 2.7em;
+    padding: 0em 2em;/*2 valeurs == 0 pour le haut et le bas et 2 pour droite et gauche*/
+    font-size: 1.2em;
+    transition: 2s;/* temps de l'animation ici une transition de 2scd au urvol de la souris sur mes balises  a*/
+}
+nav a:hover{
+    background: #fda500;
+    color: #000;
 }
