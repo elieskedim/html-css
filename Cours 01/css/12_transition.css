@@ -7,6 +7,7 @@ ul{
     float:left;
     margin: 0;
     padding: 0;
+    border-right: 1px solid #ccc;
 } /* sélectionne TOUTES les listes <ul> */
 .left, .right{
     margin-top:5em;
@@ -34,3 +35,42 @@ ul.liste li{
     width: 10em;
     text-align: center;
 }
+.right .change ul li:first-child{
+    background-color: #5d5d5d;
+    color: #fff;
+    font-weight: bold;
+}
+.right .change ul li:last-child{
+    border-bottom: 1px solid #ccc;
+}
+/*============== FIN MISE EN FORME TABLEAUX=====================*/
+
+/*=============  EFFETS DE TRANSITION AU SURVOL DE LA SOURIS :hover*/
+.right .change ul:hover{
+    background: linear-gradient(#5d5d5d, #8a8a8a);
+    cursor: pointer;
+    transform: scale(1.4);
+    transition-duration: 2s;
+}
+.right .change ul:hover li:first-child{
+    background-color: #000;
+}
+/* =================== FIN ============ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
