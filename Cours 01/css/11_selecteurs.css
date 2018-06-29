@@ -7,8 +7,8 @@ nav{
     padding: 0 0.5em;
     text-align: center;
     width: 100%;
-    margin: 0;position: fixed;
-    top: 0;
+    margin: 0;position: fixed;/*je fixe la nav en haut*/
+    top: 0;/*jr m'assure que ces deux valeurs soit bien a 0*/
     left: 0;
 }
 nav a{
@@ -25,4 +25,25 @@ nav a{
 nav a:hover{
     background: #fda500;
     color: #000;
+}
+/*****************************  FIN Navigation ***************************/
+#content{
+    width: 90%;
+    margin: auto;
+}
+.container{
+    padding: 30px;
+    background: #f1fcde;
+    margin: 20px;
+}
+main{
+    display: flex;
+    justify-content: space-around;
+    background: #f0e9fd;
+}
+main section{
+    width: 40%;
+}
+ul{
+    list-style-image: url("../img/next.png");
 }
