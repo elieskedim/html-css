@@ -1,0 +1,36 @@
+body{
+    font-family: sans-serif;
+    font-size: 1.5em;
+}
+ul{
+    list-style: none;
+    float:left;
+    margin: 0;
+    padding: 0;
+} /* sélectionne TOUTES les listes <ul> */
+.left, .right{
+    margin-top:5em;
+}
+.left ul{
+    margin:3.2em 0 0 0;
+    }
+    .left ul li{
+        border-bottom: 1px solid #ccc;
+        border-left: 1px solid #ccc;
+        padding: 1em;
+        width: 10em;
+        } 
+        .left ul li:first-child{/*le premier li uniquement*/
+            border-top: 1px solid black;
+        }
+/*============  FIN 1ère COLONNE ============*/
+ul.liste li{
+    border-left: 1px solid #ccc;
+}
+.right .change ul li{
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    padding: 1em;
+    width: 10em;
+    text-align: center;
+}
