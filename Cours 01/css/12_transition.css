@@ -49,7 +49,7 @@ ul.liste li{
 .right .change ul:hover{
     background: linear-gradient(#5d5d5d, #8a8a8a);
     cursor: pointer;
-    transform: scale(1.4);
+    transform: scale(1.2);
     transition-duration: 2s;
 }
 .right .change ul:hover li:first-child{
