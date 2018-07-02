@@ -17,34 +17,34 @@ div{
     float: left;
 }
 }
-@media screen and (min-width: 768px){
+@media (min-width: 768px){
 h1{
     background-color: rgb(185, 82, 34);
     width: 768px;
 }
 div{
     width: 45%;
-    float: left;
+    
 }
 }
-@media screen and (min-width: 960px){
+@media (min-width: 960px){
 h1{
     background-color: rgb(187, 190, 3);
     width: 960px;
 }
 div{
     width: 45%;
-    float: left;
+    
 }
 }
-@media screen and (min-width: 1200px){
+@media (min-width: 1200px){
 h1{
     background-color: rgb(3, 190, 50);
     width: 1280px;
 }
 div{
     width: 45%;
-    float: left;
+    
 }
 }
 /*Les média queries définissent des points de rupture / de transition d'affichage (break points)*/
