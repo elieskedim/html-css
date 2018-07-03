@@ -33,9 +33,10 @@ section p:nth-child(10) {
 }*/
 
 $nb: 1;
-
+$var= {yellow, blue};
 @while $nb < 10 {
     section p:nth-child($nb) {
-        color: 
+        color: $var{$nb};
     }
+    $nb++;
 }
