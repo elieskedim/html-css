@@ -31,6 +31,11 @@ section p:nth-child(9) {
 section p:nth-child(10) {
     color: darkblue;
 }*/
-@while condition {
-    
+
+$nb: 1;
+
+@while $nb < 10 {
+    section p:nth-child($nb) {
+        color: 
+    }
 }
