@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulaire HTML complet</title>
+</head>
+<body>
+    
+    <form action="post" enctype="">
+        <label for=""></label>
+        <input type="text" id="" name="" required>
+        <br>
+
+        <label for="mdp">Mot de pass *</label>
+        <input type="password" id="mdp" name="" required>
+        <br>
+
+        <label for="email">Email *</label>
+        <input type="email" name="email" id="email" placeholder="email" required>
+        <br>
+
+        <label for="file">Fichier *</label>
+        <input type="file" name="file" id="file">
+        <br>
+        <label for=""></label>
+        <select name="" id="">
+            <optgroup label="">
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+            </optgroup>
+            <optgroup label="">
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+            </optgroup>
+        </select>
+
+        <br>
+
+        <label for="choix">Choisir</label>
+        <p>
+            <input type="checkbox" name="choix" checked>Choix1
+            <input type="checkbox" name="choix">Choix2
+            <input type="checkbox" name="choix">Choix3
+        </p>
+
+        <label for="civilite">Civilité</label>
+        <p>
+            <input type="radio" name="civilite" value="m" checked>Homme
+            <input type="radio" name="civilite" value="f">Femme
+        </p>
+
+        <label for="ville">Ville</label>
+        <input type="text" id="ville" name="ville" list="france">
+        <datalist id="france">
+            <option value="">MontPellier</option>
+            <option value="">Nantes</option>
+            <option value="">Gennevilliers</option>
+            <option value="">Rennes</option>
+        </datalist>
+        
+    </form>
+</body>
+</html>
