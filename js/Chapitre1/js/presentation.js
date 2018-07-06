@@ -14,8 +14,10 @@ var war = {
        		 console.log('il reste au voleur ' + cible.vie + ' pdv')
         }  
     },
-    isalive: function(){
-    	if (this.vie <= 0) {this.vie = 0}
+    rez: function(cible){
+        if(cible.vie <=0 ){
+            cible.vie = 100;
+        }else {console.log('vous nete pas mort')}
     } 
 }
 
@@ -55,7 +57,7 @@ var rogue = {
     } 
 }
 var life = document.getElementById('life');
-
+var rez = document.getElementById('rez');
 var potion = document.getElementById('potion');
 var element = document.getElementById('attaque');
 element.onclick = function () {
@@ -66,4 +68,8 @@ element.onclick = function () {
 potion.onclick = function() {
 	rogue.regen()
     life.style.width = rogue.vie+"px";
+};
+rez.onclick = function () {
+    war.rez(rogue)
+    life.style.width = rogue.vie + "px";
 };

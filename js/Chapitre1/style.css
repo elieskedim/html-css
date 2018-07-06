@@ -18,6 +18,11 @@
     color: green;
     cursor: pointer;
 }
+#rez{
+    margin-top: 10px;
+    color: rgb(128, 0, 0);
+    cursor: pointer;
+}
 #fcombat{
     height: 200px;
     border: 1px solid black;
