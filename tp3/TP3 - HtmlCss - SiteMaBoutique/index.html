@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ma Boutique</title>
+    <link rel="stylesheet" href="css/reset.css"><!-- Je met un reset afain d'annuler le comportement par deffaut de tous les navigateur et avoir le même rendu visuel sur tous les navigateurs -->
+    <link rel="stylesheet" href="css/style.css"><!-- Ensuite ! je place mon css. Si je l'avais mis au dessu du reset celui-ci aurais été lus après mon css et toutes les modification apporter aurais été an nuler par le reset. Ma feuille de style viens toujours après toutes les autres y compris les googles fonts -->
+</head>
+<body><!-- Toutes la partie Grise visible sur la maquette -->
+    <div id="container">
+<!-- Je décide que ma balise header contiendras les elements que je divise en 3 blocks pour facilité leurs mise en ligne, ainsi tous les elements contenu dans ces trois block garderons leurs comportement native cela m'évitera des ligne de code suplémentaire -->
+        <header>
+            <div id="logo-block"><!-- Je met un id car je n'aurais qu'un bloc logo-block, et je lui met cette id pour pouvoir le modifier en css -->
+                <div>
+                    <img src="img/logo.png" alt="">
+                </div>
+                <!-- Je sépare mes éléments dans deux block pour ne pas me prendre la tête à devoir remettre le span en dessous du h1 -->
+                <div>
+                    <h1>Ma Boutique</h1><!-- Un seul h1 par page le titre -->
+                    <span>Vente en ligne : Mode, Tendance et Déco</span>
+                </div>
+                
+            </div>
+            <div id="help"><!-- Prenez l'habitude de donner des nom en Anglais car la lanngue ne possède pas d'accent et cela vous évitera des problème dans le futur prenez la même habitude pour le nomage des variables -->
+                <p>Besoin d'aide ?</p>
+                <div>0800 10 28 10</div>
+                <span>Du lundi au Vendredi de 10h à 17h30</span>
+            </div>
+            <div id="compte">
+                <p>Mon Compte</p>
+                <div><!-- Pas besoin de mêtre un id car il n'y à qu'une seule div dans ma div "compte" -->
+                    <img src="img/article.png" alt="">
+                    <span>article(s) dans votre panier.</span>
+                </div>
+            </div>
+        </header>
+        <!-- fIN DU HEADER -->
+        <!-- DEBUT NAV -->
+        <nav>
+            <ul><!-- Normalement dans chaques li il doit y avoir une balise a afain de pouvoir naviguer dans les autres pages la c'est une maquette donc ce n'est pas bien grâve -->
+                <li>Accueil</li><!-- On écrit les nom en minuscule et on les modifie en css d'une part car le jour ou on veux modifier on a une seule ligne à modifier en css et les accent seront aussi mis sur les mot en majuscule comme le é ou ê -->
+                <li>Vêtements</li>
+                <li>Maison</li>
+                <li>Technologie</li>
+                <li>Bijoux</li>
+                <li>Idée Cadeaux</li>
+            </ul>
+        </nav>
+
+        <!-- fin de la nav -->
+
+        <!-- Debut de la section main -->
+        <main>
+            <img src="img/bandeau.png" alt="">
+        </main>
+
+        <!-- fIN SECTION MAIN -->
+
+        <!-- DEBUT SECTION INFO -->
+        <section>
+            <div>
+                <h3>Paiement Sécurisé</h3>
+                <p>Réglez vos achats en toutes séréniité sur maboutique.com</p>
+                <img src="img/paiement.png" alt="">
+            </div>
+            <div class="separation">
+                <h3>Qui sommes nous ?</h3>
+                <p>
+                    Bienvenue chez MaBoutique ! MaBoutique est la plus grande boutique en ligne de france consacré à la mode et à la beauté pour les hommes et les femmes.<br>
+                    Nous proposons plus de 650 marques ainsi que nos propres collections.<br>
+                    N'hésitze plus ! les livraison et les retours sont gratuit. <br>
+                    Retrait possible de votre commande dans notre entrepot sur RDV.
+                </p>
+            </div>
+            <div class="separation">
+                <h3>Services</h3>
+                <div class="services">
+                    <img src="img/camion.png" alt="">
+                    <p>Livraison sous 48h</p>
+                </div>
+                <div class="services">
+                    <img src="img/echange.png" alt="">
+                    <p>Produiots echangeables</p>
+                </div>
+            </div>
+        </section>
+        <!-- Fin de la section info -->
+
+        <!-- DEBUT DE LA SECTION PROMOS -->
+        <div id="promo">
+            <div class="blocs">
+                <h2>Bon Plan</h2>
+                <div>
+                    <img src="img/robe.png" alt="">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat natus odit et? Dignissimos eligendi numquam suscipit perferendis nisi accusamus voluptatem quos aut. Veniam cumque quod vel esse culpa praesentium eligendi.</p>
+                </div>
+                <p class="voir">Voir</p>
+            </div><!-- Fin block 1 -->
+
+
+            <div class="blocs">
+                <h2>Coup de coeur</h2>
+                <div>
+                    <img src="img/talons.png" alt="">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque tempore nisi non tenetur distinctio, quis itaque voluptatibus, dolorem, quisquam quasi odio accusantium dolor obcaecati! Nostrum cumque minima ea rerum et.</p>
+                </div>
+                <p class="voir">Voir</p>
+            </div><!-- Fin bloc 2 -->
+
+
+            <div class="blocs">
+                <h2>Objectif Plaisir</h2>
+                <div>
+                    <img src="img/chemise.png" alt="">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam obcaecati, velit voluptate delectus ad vel debitis perferendis culpa eligendi sit nam fuga temporibus. Corrupti ipsam natus consequatur, porro ex omnis?</p>
+                </div>
+                <p class="voir">Voir</p>
+            </div><!-- Fin bloc 3 -->
+        </div>
+
+        <!--  FIN DE LA DIV PROMO !!! -->
+
+        <!--  Debut du footer -->
+
+        <footer>
+            <p>News letter - Promotions - Nouveaux Produits - Meilleurs ventes - Mentions Légales - Conditions Générales de Vente - Contactez Nous</p>
+        </footer>
+    </div>
+</body>
+</html>

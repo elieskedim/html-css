@@ -1,0 +1,192 @@
+body{
+    background: url(../img/fond.png);
+
+}
+#container{/*Je place le contenu de mon site dans une balise afain de pouvoir la redimensionner et la déplacer*/
+    width: 70%;
+    margin: 30px auto;/*Afin d'avoir l'éspacement supérieur on indique une marge en haut et pour que le reste soit center on demande un calcule des marge automatique (rappel-> margin: top right bottom left;*/
+    background-color: #fff;
+    box-shadow: 0px 6px 6px 0px black;/*J'ajoute le petit effet d'ombre*/
+}
+/***************************** Ici je commence la mise en forme de mon header ***************************/
+header{
+    display: flex;/*Je demande à tous mes elements enfants de se mettre en ligne (s'ils en n'ont la place)*/
+    justify-content: space-between;/*Je modifie leurs comportement en leurs demandent de garder un espace égale entre chaques éléments. Si je n'avais pas mis mes 3 div à se moment la tous mes élement aurais été sur une seul ligne. Visuelement prenez l'haitude de travailler en block car c'est le comportement nativ d'une page web.*/
+}/*Mon header a  déjà la forme demander simplement avec 3 ligne car on la découper de la façon la plus courte possible*/
+header #logo-block{/* Je selectionne mon block #logo-block contenu DANS la balise header*/
+    display: flex;/*Je reproduit le même comportement que dans le header*/
+}
+header #logo-block img{
+    margin-left: 5px;
+}
+header #logo-block h1{/*Indiquer tout les parent d'une balise aide à mieu se repérer dans l'écriture du code*/
+    font-size: 2.8em;/*J'ajoute une taille à mon h1 car le reset retire toutes les tailles. Je l'indique en em pour qu'elle s'adapte à l'écransans être relative comme la valeur rem*/
+    margin-left: 15px;/*Comme sur la maquette le h1 est décalé par apport à l'image je met un margin left la valeur est au pif*/
+}
+header #logo-block span{
+    font-size: 0.9em; /*La taille de base est de 1 donc je la réduit un peu. Ne SOURTOUT pas oublier en programmation la virgule sert de séparateur donc pour écrire un chiffre à virgule on utilise le point*/
+    color: #f48ae3;/*Lorsqu'on à une maquette il faut toujour utiliser les même couleur. Pour les trouver il suffit de télécharger le logiciel "la Boite à couleur" et de le lancer, un petit réctangle apparait il y a l'icone d'une petite pipette dessus il faut cliquez dessus puis sur la couleur qu'il vous faut. Copier le code en dessous de l'image dans votre fichier css*/
+    margin-left: 30px;/*On décale ensuite la span car sur la maquette le titre et le sous titre ne sont pas aligner*/
+}
+/***************************** Fin Du block logo **********************************************/
+
+/*************************** Début du block HELP **********************************/
+header #help{
+    color: #42c7fa;
+}
+header #help p{
+    font-size: 2.5em;
+}
+header #help div{
+    height: 23px;/*Pour la heuteur et la largeur je prend celle de l'image fourni avec la maquette*/
+    width: 170px;
+    background: url(../img/aide.png)no-repeat;/*J'insère mon image en css afin de pouvoir écrire dessus*/
+    padding-left: 50px;/*Ne pas oublier que l'image est en fond et donc pour mon html l'icone téléphone et tout le bleu n'éxiste pas il place donc le texte le plus à gauche de mon block j'utilise donc un padding afin de déplacer le texte grâce au marge intérieur*/
+    padding-top: 4px;
+    font-size: 1.1em;
+    font-weight: bold;/*Je fait ressortir le texte en le mettant en gras*/
+    /*
+    Ne pas oublier que si vous ne savez pas comment faire quelque chose le meilleur reflexe est de demander à google, j'ai oublier comment mettre le texte en gras en css j'ai donc fait une recherche qui m'a pris 30s
+    */
+}
+header #help span{
+    color: #d9d9d9;/*Comme plus haut j'ai mis la couleur dans la balise #help, ici je doit faire une sélection plus pousser pour pouvoir colorer cette span en gris.*/
+}
+/*
+    J'écris mon css dans le même ordre que j'ai écris mon code html, je stylise les balise de haut en bas dans le même ordre
+*/
+/*********************  FIN Du block HELP ************************/
+
+header #compte{
+    background-color: #42c7fa;
+    width: 300px;/*J'augmente sa l'argeur pour être conforme à la maquette*/
+    color: white;
+}
+header #compte p{
+    text-align: center;
+    font-size: 1.1em;
+    padding-bottom: 5px;/*On crée un éspacement avec la bordure du bas*/
+    border-bottom: 1px solid #fff;/*On utilise une bordure arette aevc ton hr!*/
+}
+header #compte div{/*Je selectionne la div dans la div "compte* grace à la selection précise qu'on utilise depuis le début il n'y à pas de conflit dans notre selection*/
+    display: flex;/*Encore une foi jutilise flex afain de rester cohérent avec les propriété que j'utilise l'important n'ai pas de toutes les utiliser mais dêtre le plus cohérent possible dans sont code*/
+}
+header #compte div span{
+    /*
+        ici on obsèrve que le comportement flex aligne les block par le haut donc span est remonter et on souhaite le redéscendre 
+    */
+    margin-top: 20px;
+}
+/********************************* Fin de compte **************************/
+
+/************************** FIN DU HEADER ******************************/
+
+
+/*************************** DEBUT DE LA NAV ****************************/
+nav ul{/*Comme on a utiliser un reset notre liste n'a pas de puce(se qui nous arrange)*/
+    display: flex;
+    justify-content: space-around;
+    /*
+        Tu connais déjà
+    */
+}
+nav ul li{
+    height: 30px;
+    width: 300px;/*On leurs donne une largeur car la propriété flex a modifier leurs comportement block en inline-block donc elle prenne seulement la largeur dont elle ont besoin tant  qu'on ne le modifie pas*/
+    text-align: center;
+    background-color: #42c7fa;
+    color: white;
+    padding-top: 10px;/*On crée un espace entre la bordure du haut et le texte*/
+}
+nav ul li:first-child{/*On selectionne le premier li grace à la pseudo class :first-child car on est des foufou*/
+    background-color: #f48ae3;
+}
+/**************************** FIN DE LA NAV ***************/
+
+
+/***************************** DEBUT SECTION MAIN ****************/
+main img{
+    width: 100%;/*On modifie la largeur de l'image pour qu'elle prenne la totazlité de la largeur du container*/
+}
+/******************************** FIN DE LA SECTION MAIN **************/
+
+/****************************** DEBUT SECTION INFO *********************/
+section{
+    display: flex;
+}
+section h3{
+    color: #42c7fa;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+section div:first-child img{/*On selectionne la balise image dans la première div enfant de la balise section*/
+    margin-left: 20px;
+    margin-top: 10px;
+}
+section .separation{
+    border-left: 1px solid gray;
+    padding-left: 20px;
+}
+section .services{
+    display: flex;
+}
+section div:last-child{/*Je selectionne la dernière div enfant dans la div section*/
+    width: 250px;
+}
+section .services p{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+/************************* FIN DE LA SECTION INFO ****************************/
+/************************ DEBUT DE LA SECTION PROMO *************************/
+div#promo{
+    display: flex;
+    padding-top: 50px;
+    justify-content: space-around;
+}
+div#promo div.blocs{
+    border: 1px solid #d9d9d9;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 6px 0px black;
+    
+}
+div#promo div.blocs h2{
+    font-size: 1.6em;
+    background-color: #d9d9d9;
+}
+div#promo div.blocs div{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+div#promo div.blocs div p{
+    width: 300px;
+}
+div#promo div.blocs p.voir{
+    text-align: right;
+    color: #42c7fa;
+    padding-right: 5px;
+}
+/******************* FIN SECTION PROMO ***************/
+
+/***************** DEBUT FOOTER ***********************/
+footer{
+    margin-top: 30px;
+    height: 30px;
+    background-color: #42c7fa;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+/*
+Quand j'intègre une Maquette je récupère le code de toutes les couleurs et je les met en commentaire comme ça je n'ai pas besoin de les chercher partout.
+    Color:
+
+    Bleu : #42c7fa
+    Rose : #f48ae3
+    Gris : #d9d9d9
+
+
+
+*/
