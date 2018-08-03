@@ -1,0 +1,152 @@
+body{
+    background: url(../img/fond.png);
+
+}
+.container{/*Je place le contenu de mon site dans une balise afain de pouvoir la redimensionner et la déplacer*/
+    width: 70%;
+    margin: 30px auto;/*Afin d'avoir l'éspacement supérieur on indique une marge en haut et pour que le reste soit center on demande un calcule des marge automatique (rappel-> margin: top right bottom left;*/
+    background-color: #fff;
+    box-shadow: 0px 6px 6px 0px black;/*J'ajoute le petit effet d'ombre*/
+}
+#logo{
+    display: flex;
+
+}
+#logo div{
+    margin-left: 10px;
+}
+#logo div #pink{
+    font-size: 0.9em;
+    color: #f48ae3;
+    margin-left: 10px;
+}
+header #help{
+    color: #42c7fa;
+}
+header #help p{
+    font-size: 1.5em;
+}
+header #help div{
+    height: 23px;/*Pour la heuteur et la largeur je prend celle de l'image fourni avec la maquette*/
+    width: 170px;
+    background: url(../img/aide.png)no-repeat;/*J'insère mon image en css afin de pouvoir écrire dessus*/
+    padding-left: 50px;/*Ne pas oublier que l'image est en fond et donc pour mon html l'icone téléphone et tout le bleu n'éxiste pas il place donc le texte le plus à gauche de mon block j'utilise donc un padding afin de déplacer le texte grâce au marge intérieur*/    
+    font-size: 1.1em;
+    font-weight: bold;/*Je fait ressortir le texte en le mettant en gras*/
+    /*
+    Ne pas oublier que si vous ne savez pas comment faire quelque chose le meilleur reflexe est de demander à google, j'ai oublier comment mettre le texte en gras en css j'ai donc fait une recherche qui m'a pris 30s
+    */
+}
+header #help span{
+    color: #d9d9d9;/*Comme plus haut j'ai mis la couleur dans la balise #help, ici je doit faire une sélection plus pousser pour pouvoir colorer cette span en gris.*/
+    font-size: 0.9em;
+}
+#compte{
+     background-color: #42c7fa;
+    width: 300px;/*J'augmente sa l'argeur pour être conforme à la maquette*/
+    color: white;
+}
+#compte p{
+    text-align: center;
+    border-bottom: 1px solid #fff;
+}
+
+
+/********************************* NAV********************************/
+.navbar{
+    background-color: #42c7fa;
+    color: white;
+    padding: 0;
+    margin-top: 15px;
+    text-align: center;
+}
+#elemNav, #elemNav1{
+    color: white;
+    width: 190px;
+}
+#elemNav1{
+    background-color: #f48ae3;
+    margin-top: 0px;
+    margin-bottom: 0;
+}
+main img{
+    width: 100%;/*On modifie la largeur de l'image pour qu'elle prenne la totazlité de la largeur du container*/
+}
+
+section h3{
+    color: #42c7fa;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+section p{
+    font-size: 0.8em;
+}
+section div:first-child img{/*On selectionne la balise image dans la première div enfant de la balise section*/
+    margin-left: 20px;
+    margin-top: 10px;
+}
+section .separation{
+    border-left: 1px solid gray;
+    padding-left: 20px;
+}
+section .services{
+    display: flex;
+}
+section div:last-child{/*Je selectionne la dernière div enfant dans la div section*/
+}
+section .services p{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+div#promo div.blocs{
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+    box-shadow: 0px 6px 6px 0px black;
+    padding: 0;
+    margin-left: 50px;
+    margin-top: 30px;
+    
+}
+
+div#promo div.blocs h2{
+    font-size: 1.6em;
+    background-color: #d9d9d9;
+    border-radius: 5px;
+}
+div#promo div.blocs div{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    height: 200px;
+}
+
+div#promo div.blocs div p{
+    width: 300px;
+    font-size: 0.8em;
+}
+
+div#promo div.blocs p.voir{
+    text-align: right;
+    color: #42c7fa;
+    padding-right: 5px;
+}
+footer{
+    margin-top: 30px;
+    background-color: #42c7fa;
+    color: white;
+    padding-top: 20px;
+}
+footer p{
+    margin-left: 60px;
+}/*
+Quand j'intègre une Maquette je récupère le code de toutes les couleurs et je les met en commentaire comme ça je n'ai pas besoin de les chercher partout.
+    Color:
+
+    Bleu : #42c7fa
+    Rose : #f48ae3
+    Gris : #d9d9d9
+
+
+
+*/
