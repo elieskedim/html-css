@@ -1,0 +1,13 @@
+<section class="container container4">
+            <h3>Pour aller plus loin en CSS, quelques pistes...</h3>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">MDN le site officiel</a></li>
+                <li><a href="https://tympanus.net/codrops/">Codrops, références, tutos...</a></li>
+                <li><a href="https://flukeout.github.io/">Jeu avec les sélecteurs CSS</a></li>
+                <li><a href="http://flexboxfroggy.com/">Un autre jeu sur le système des "Flexbox"</a></li>
+                <li><a href="http://viewportsizes.com/">Différentes tailles d'écrans</a></li>
+                <li><a href="http://fr.learnlayout.com/">Tutos simples en français</a></li>
+                <li><a href="https://purecss.io">Encore des tutos</a></li>
+                <li><a href="https://www.w3c.org/Style/CSS/learning">Le site du W3C (partie CSS)</a></li>
+            </ul>
+        </section>
