@@ -1,0 +1,505 @@
+*{
+    box-sizing: border-box;
+}
+
+/* NORMALIZE */
+html,body, div, span, applet, object, iframe, 
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, a, abbr, acronym, address,
+big, cite, code, del, dfn, em, img, ins, kbd,
+q, s, samp, small, strike, strong, sub, sup,
+tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, figure,
+figcaption, footer, header, hgroup, menu, nav,
+output, ruby, section, summary, time, mark, audio, video{
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline; 
+}
+
+/* REGLAGES GENERAUX */
+body{
+    background-image: url(../img/fancy-pants.jpg);
+    scroll-behavior: smooth; /* effet de scroll quand on clique sur une ancre - ne marche que sur Firefox, Chrome et Opéra dernières versions */
+}
+h1{
+    font-size: 45px; /* EMMET => fz45px + tab */
+    font-family: 'Anton', sans-serif;
+    color: #2980b9;
+    text-align: center; /* EMMET => tac + tab */
+    letter-spacing: 1px; /* EMMET => ls1 + tab */
+}
+h2{
+    font-size: 35px;
+    color: #2c3e50;
+    padding: 20px; /* EMMET => p20 + tab */
+    font-weight: bold; /* EMMET => fwb + tab */
+    text-shadow: 1px 1px 2px #aaa; /* 4 valeurs : ombre horizontale, verticale, zone de flou, couleur de l'ombre */
+}
+h3{
+    font-size: 22px;
+    color: #2c3e50;
+    padding: 15px;
+    text-shadow: 1px 1px 2px #aaa;
+}
+h4{
+    text-align: center;
+    margin-top: 30px; /* EMMET => mt30 + tab */
+}
+blockquote{
+    font-style: italic;
+    font-size: 120%;
+}
+strong{
+    font-weight: bold; /* EMMET => fwb + tab */
+}
+
+/* ---------- HEADER --------- */
+header{
+    background: #2c3e50;
+    height: 175px; /* EMMET => h175 + tab */
+}
+#logo{
+    float: left; /* EMMET => fl + tab */
+    width: 25%; 
+    background: #2c3e50;
+    padding: 15px;
+    text-align: center;
+}
+#slogan{
+    float: left;
+    width: 50%;
+    background: #2c3e50;
+    padding-top: 50px; /* EMMET => pt50 + tab */  
+}
+#social{
+    float: left;
+    width: 25%;
+    }
+    #social i{
+        background: #2c3e50;
+        font-size: 30px;
+        text-align: right; /* EMMET => tar + tab */
+        padding: 15px 30px 0 0;
+        display: block; /* EMMET => db + tab */
+    }
+header a{
+    color: #10828c;
+    text-decoration: none; /* EMMET => tdn + tab */
+}
+/* ---------- FIN HEADER --------- */
+nav{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #2980b9;
+    display: flex;
+    justify-content: center;
+}
+nav li{
+    list-style: none;
+}
+nav a{
+    text-decoration: none;
+    color: #2c3e50;
+    border: 2px solid white;
+    background-color: #6acafc;
+    display: inline-block;
+    padding: 5px 15px 5px 15px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: 25px;;
+}
+nav a:hover{
+    background: #a6d6c3;
+    color: #fff;
+}
+.activ{
+    background-color: rgb(13, 11, 146);
+    color: white;
+}
+section{
+    width: 700px;
+    margin: auto;
+}
+section div:first-child{
+    height: 200px;
+    background-color: #a6d6c3;
+}
+section div:last-child{
+    height: 100px;
+    background-color: silver;
+}
+main{
+    background-color: #fff;
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+}
+h1{
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+main blockquote{
+    margin-left: 20px;
+}
+footer{
+    height: 50px;
+    background-color: #2980b9;
+} 
+/***************** Fin Index ************************/
+button{
+
+    position: fixed;
+
+    bottom: 40px;
+
+    right: 20px;
+
+    cursor: pointer;
+
+    border: none;
+
+    background: transparent;
+
+    font-size: 250%;
+
+    color: rgba(151, 216, 178, 0.5);
+
+}
+/**************** Image Début ***********************/
+main{
+    width: 1004px;
+    padding-left: 0;
+    background: #aaa;
+}
+#fond{
+    height: 651px;
+    width: 1004px;
+    background: url(../img/fond.jpg) no-repeat;
+}
+#fond p{
+    margin-left: 15px;
+    padding-top: 20px;
+    color: #333d4e;
+    font-size: 1.5em;
+}
+#transparent{
+    background: rgba(163, 163, 163, 0.4);
+    width: 700px;
+    padding: 20px;
+    margin: 150px auto;
+}
+h3{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+#effeil{
+    text-align: center;
+}
+h4{
+    font-size: 1.6em;
+    margin-bottom: 30px;
+}
+main div:last-child{
+    width: 800px;
+}
+main div:last-child img{
+    margin-left: 60px;
+    margin-top: 60px;
+    border: 5px solid #fff;
+    transition: 1s;
+}
+.rotate:hover{
+  transform: rotate(7deg);
+  border: 15px solid #fff;
+   
+}
+#tour:hover{
+  transform: rotate(180deg);
+  border: 15px solid #fff;
+}
+main #orange{
+    height: 100px;
+    width: 100px;
+    background-color: orange;
+    position: absolute;
+    top: 230px;
+    left: 230px;
+}
+main #bloc_centrer{
+    height: 200px;
+    width: 500px;
+    background-color: rgb(1, 162, 255);
+    margin: auto;
+}
+main #bloc_relativ{
+    height: 500px;
+    background-color: rgb(0, 4, 243);
+}
+#relative{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(229, 255, 0);
+    position: relative;
+    right: -750px;
+}
+/**************** ZONING ********************/
+#zoning1{
+    background: #ffd6d6;
+    width: 800px;
+    text-align: center;
+    text-shadow: 1px 1px 2px darkgrey;
+    margin: auto;
+}
+#zoning1 header{
+    height: 70px;
+    background: #F7F39A;
+}
+#zoning1 aside{
+    height: 525px;
+    float: left;
+    width: 20%;
+    background: #A3DE83;
+}
+#zoning1 section{
+    float: left;
+    background: #38817A;
+    height: 525px;
+    width: 80%;
+    margin:0;
+    padding: 0;
+}
+
+
+#zoning2{
+    /*On aurais pu taper "zoning2" directement dans le CSS de "zoning1" à la suite sans oublier la virgule*/
+    background: #ffd6d6;
+    width: 500px;
+    text-align: center;
+    text-shadow: 1px 1px 1px darkgrey;
+    margin: auto;
+}
+#zoning2 header{
+    height: 70px;
+    background: #F8F5E4
+;
+}
+#zoning2 aside{
+    height: 525px;
+    float: left;
+    width: 20%;
+    background: #10828C;
+    color: white;
+}
+#zoning2 .middle{
+    float: left;
+    background: #0E3047;
+    height: 525px;
+    width: 60%;
+    margin:0;
+    padding: 0;
+    color: white;
+}
+#zoning3{
+    background: #ffd6d6;
+    width: 800px;
+    text-align: center;
+    text-shadow: 1px 1px 2px darkgrey;
+    color: white;
+    margin: auto;
+}
+#zoning3 section{
+    height: 525px;
+    float: left;
+    width: 50%;
+    background:rgb(11, 30, 32);
+    margin: 0;
+    padding: 0;
+}
+#zoning3 footer{
+    height: 70px;
+    float: left;
+    width: 100%;
+    background: rgb(188, 255, 64);
+    color: black;
+}
+#zoning3 section:nth-of-type(2){
+    background: rgb(21, 32, 22);
+}
+#zoning4{
+    background: #fff;
+    text-align: center;
+    text-shadow: 1px 1px 2px darkgrey;
+    border: 2px solid black;
+    margin: 0 auto;
+    width: 700px;
+}
+#zoning4 header{
+    height: 90px;
+    background: rgb(216, 226, 219);
+}
+#zoning4 nav{
+    height: 50px;
+    background: rgb(113, 181, 113);
+
+
+}
+#zoning4 #contentcontent{
+    height: 500px;
+    background: rgb(23, 129, 111);
+    margin: 20px;
+    padding: 0;
+}
+#zoning4 footer{
+    height: 75px;
+    background: rgb(70, 13, 63);
+}
+#zoning4 #contentcontent, footer{
+    color: white;
+}
+#zoning5{
+    background: rgb(233, 233, 236);
+    text-align: center;
+    text-shadow: 1px 1px 2px darkgrey;
+    border: 2px solid black;
+    margin: 0 auto;
+}
+#zoning5 header{
+    height: 90px;
+    background: rgb(248, 113, 226);
+}
+#zoning5 nav{
+    height: 50px;
+    background: rgb(148, 111, 2);
+    border-bottom: 8px solid rgb(75, 24, 193);
+}
+#zoning5 .section{
+
+    background: #176D81;
+    margin: 20px;
+    padding: 0;
+}
+#zoning5 .section .z1, .z2, .z3, .z4{
+    height: 250px;
+    width: 50%;
+    float: left;
+}
+#zoning5 .z1, .z4{
+    background: rgb(97, 88, 63);
+}
+#zoning5 .z2, .z3{
+    background: rgb(134, 105, 0);
+}
+#zoning5 footer{
+    height: 75px;
+    background: rgb(136, 102, 0);
+}
+#zoning5 section, footer{
+    color: black;
+}
+#zoning6{
+    width: 800px;
+    margin: 0 auto;
+    color: white ;
+    text-align: center;
+}
+#zoning6 header{
+    background: #eff300;
+    height: 180px;
+}
+.haut1{
+    float: left;
+    width: 25%;
+    height: 100%;
+    background: #4ef3ff;
+}
+.haut2{
+    float: left;
+    width: 50%;
+    height: 100%;
+    background: rgb(1, 90, 16);
+}
+.haut3{
+    float: left;
+    width: 25%;
+    height: 100%;
+    background: #2f00ff;
+}
+#zoning6 nav{
+    background: #0B5269;
+    height: 30px;
+    border: none;
+}
+#zoning6 aside{
+    background:#00b3ff;
+    width: 20%;
+    height: 650px;
+    float: left;
+
+}
+#zoning6 section{
+    width: 80%;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+.slideshow{
+    background: rgb(37, 120, 148);
+    height: 250px;
+}
+#zoning6 .a{
+    background: rgb(255, 0, 0);
+    width: 50%;
+    height: 250px;
+    float: left;
+}
+#zoning6 .b{
+    background: #006e00;
+    width: 50%;
+    height: 250px;
+    float: left;
+}
+#zoning6 .c, .e{
+    background: rgb(156, 4, 149);
+    width: 25%;
+    height: 150px;
+    float: left;
+}
+#zoning6 .d, .f{
+    background: #2b6220;
+    width: 25%;
+    height: 150px;
+    float: left;
+}
+#zoning6 footer{
+    background: rgb(46, 153, 189);
+    height: 50px;
+    color: white ;
+}
+#elies{
+    display: flex;
+}
+#bloc-left{
+    height: 500px;
+    width: 100px;
+    background-color: rgb(62, 26, 129);
+}
+#bloc-center{
+    height: 500px;
+    width: 300px;
+    background-color: rgb(190, 37, 152);
+}
+#bloc-right{
+    height: 500px;
+    width: 100px;
+    background-color: rgb(31, 88, 173);
+}
+.clear{
+    clear: both;
+}
